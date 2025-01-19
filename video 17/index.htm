@@ -12,14 +12,31 @@
             color: rgb(42, 61, 4);
             background-color: blanchedalmond;
         }
+
+        /*Class Selector*/
+        .red {
+            background-color: brown;
+        }
+
+        /*ID selector*/
+        #green {
+            background-color: chartreuse;
+        }
+
+        /* child selector*/
+        div>p {
+            color: aliceblue;
+            background-color: coral;
+        }
     </style>
 </head>
 
 <body>
     <div class="red">
         I am div
+        <p>i am para inside div</p>
     </div>
-    <div>
+    <div id="green">
         I am another div
     </div>
 
