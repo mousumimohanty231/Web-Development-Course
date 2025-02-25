@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        } */
+
+        /* .box::first-line {
+            color: aqua;
+        } */
+        /* .boxes * {
+            color: blueviolet;
+            border: 2px solid black;
+        }
+
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            padding-top: 45px;
+
+        } */
+        /* .box:nth-child(odd){
+            background-color: red;
+         } */
+        /* .box:nth-last-child(1) {
+            background-color: red;
+        } */
+        .boxes::before {
+            content: "mama is a developer";
+        }
+
+        .box::first-letter {
+            color: blue;
+            font-size: 30px;
+        }
+
+        ::selection {
+            background-color: black;
+            color: cadetblue;
+        }
+
+        .boxes::after {
+            content: "mama is a developer";
+            color: rgb(223, 19, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reiciendis itaque vel nam
+            eligendi saepe, recusandae eaque facere? Dolor, voluptas ratione, labore ea cum dolore atque quaerat
+            sapiente adipisci ipsum error rem vel.</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+
+</body>
+
+</html>
